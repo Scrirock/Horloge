@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 2rem;
+}
+
+svg{
+    width: 500px;
+    height: 75vh;
+}
+
+#mid{
+    fill: #caceff;
+}
+
+#stroke{
+    fill: #9c9fcc;
+}
+
+#heure{
+    position: relative;
+    left: -335px;
+    top: -288px;
+    transform-origin: bottom;
+}
+
+#minute{
+    position: relative;
+    left: -495px;
+    top: -288px;
+    transform-origin: bottom;
+}
+
+#seconde{
+    position: relative;
+    left: -660px;
+    top: -288px;
+    transform-origin: bottom;
+}
+
+img{
+    filter: hue-rotate(0deg);
+}
+
+#container{
+    border: 1px solid black;
+}
