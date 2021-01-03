@@ -1,8 +1,16 @@
-let heure = document.getElementById("heure");
-let minute = document.getElementById("minute");
-let seconde = document.getElementById("seconde");
+let aiguilleHeure = document.getElementById("heure");
+let aiguilleMinute = document.getElementById("minute");
+let aiguilleSeconde = document.getElementById("seconde");
+let date = new Date();
+let time = date.getSeconds() + 60*date.getMinutes() + 3600*date.getHours()
+
+aiguilleHeure.style.transform = "rotate("+time / 120+"deg)";
+aiguilleMinute.style.transform = "rotate("+time / 10+"deg)";
+aiguilleSeconde.style.transform = "rotate("+time * 6+"deg)";
+
 setInterval(()=>{
-    heure.style.transform += "rotate(1deg)";
-    minute.style.transform += "rotate(10deg)";
-    seconde.style.transform += "rotate(20deg)";
-}, 50)
+    time++;
+    aiguilleHeure.style.transform = "rotate("+time / 120+"deg)";
+    aiguilleMinute.style.transform = "rotate("+time / 10+"deg)";
+    aiguilleSeconde.style.transform = "rotate("+time * 6+"deg)";
+}, 1000)
