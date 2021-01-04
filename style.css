@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 html {
@@ -33,10 +34,36 @@ text{
     font-family: 'Indie Flower', cursive;
 }
 
+.titre{
+    text-decoration-line: underline;
+}
+
 #heure, #minute, #seconde{
     transform-origin: center;
 }
 
 #seconde{
     stroke: red;
+}
+
+#color{
+    display: inline-block;
+    height: 75vh;
+    width: 66%;
+}
+
+#bg{
+    display: inline-block;
+    height: 75vh;
+    width: 49%;
+}
+
+#aiguille{
+    display: inline-block;
+    height: 75vh;
+    width: 49%;
+}
+
+button{
+    display: block;
 }

@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <div id="container">
         <svg>
             <circle cx="250" cy="270" r="190" stroke="black" stroke-width="3" id="stroke"/>
             <circle cx="250" cy="270" r="160" stroke="black" stroke-width="2" id="mid"/>
@@ -31,7 +30,31 @@
             <text x="240" y="105">12</text>
 
         </svg>
-    </div>
+
+        <div id="color">
+            <div id="bg">
+                <p class="titre">Background</p>
+                <button id="bgRed">Rouge</button>
+                <button id="bgBlue">Bleu</button>
+                <button id="bgGreen">Vert</button>
+                <button id="bgDefault">Defaut</button>
+                <label for="bgHexa1">Code hexa(milieu): #</label>
+                <input type="text" id="bgHexa1" placeholder="024598"><br>
+                <label for="bgHexa2">Code hexa(contour): #</label>
+                <input type="text" id="bgHexa2" placeholder="024598">
+                <button id="bgValid">Valider</button>
+            </div>
+            <div id="aiguille">
+                <p class="titre">Aiguille</p>
+                <button id="red">Rouge</button>
+                <button id="blue">Bleu</button>
+                <button id="green">Vert</button>
+                <button id="default">Defaut</button>
+                <label for="hexa">Code hexa: #</label>
+                <input type="text" id="hexa" placeholder="024598">
+                <button id="valid">Valider</button>
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
